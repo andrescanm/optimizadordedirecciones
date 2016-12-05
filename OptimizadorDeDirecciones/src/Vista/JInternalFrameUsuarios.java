@@ -29,7 +29,7 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
 
         jPanelCampos = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        txtId = new javax.swing.JTextField();
+        txtIdUsuario = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         txtNombres = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -50,7 +50,7 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
         btnEditar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnNuevo = new javax.swing.JButton();
-        btnEliminar1 = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
         jPanelBusqueda = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -64,16 +64,14 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         jLabel1.setText("Id. Usuario:");
 
-        txtId.setEditable(false);
-        txtId.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
-        txtId.setEnabled(false);
-        txtId.setMargin(new java.awt.Insets(1, 1, 1, 1));
-        txtId.setMaximumSize(new java.awt.Dimension(145, 25));
-        txtId.setMinimumSize(new java.awt.Dimension(145, 25));
-        txtId.setPreferredSize(new java.awt.Dimension(145, 25));
-        txtId.addActionListener(new java.awt.event.ActionListener() {
+        txtIdUsuario.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        txtIdUsuario.setMargin(new java.awt.Insets(1, 1, 1, 1));
+        txtIdUsuario.setMaximumSize(new java.awt.Dimension(145, 25));
+        txtIdUsuario.setMinimumSize(new java.awt.Dimension(145, 25));
+        txtIdUsuario.setPreferredSize(new java.awt.Dimension(145, 25));
+        txtIdUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIdActionPerformed(evt);
+                txtIdUsuarioActionPerformed(evt);
             }
         });
 
@@ -161,9 +159,9 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
         btnNuevo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        btnEliminar1.setText("Cancelar");
-        btnEliminar1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnEliminar1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnCancelar.setText("Cancelar");
+        btnCancelar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jPanelCamposLayout = new javax.swing.GroupLayout(jPanelCampos);
         jPanelCampos.setLayout(jPanelCamposLayout);
@@ -179,7 +177,7 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
                             .addComponent(jLabel4))
                         .addGap(18, 18, 18)
                         .addGroup(jPanelCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIdUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCargo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtNombres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanelCamposLayout.createSequentialGroup()
@@ -220,7 +218,7 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnEliminar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEliminar1)
+                .addComponent(btnCancelar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelCamposLayout.setVerticalGroup(
@@ -243,7 +241,7 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
                     .addGroup(jPanelCamposLayout.createSequentialGroup()
                         .addGroup(jPanelCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(txtIdUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanelCamposLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
@@ -269,7 +267,7 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
                     .addComponent(btnGuardar)
                     .addComponent(btnEditar)
                     .addComponent(btnEliminar)
-                    .addComponent(btnEliminar1))
+                    .addComponent(btnCancelar))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -365,20 +363,20 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
+    private void txtIdUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtIdActionPerformed
+    }//GEN-LAST:event_txtIdUsuarioActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBuscar;
-    private javax.swing.JButton btnEditar;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnEliminar1;
-    private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnNuevo;
-    private javax.swing.JComboBox<String> cboxSeleccionarAtributoBuscar;
-    private javax.swing.JComboBox<String> cboxSeleccionarTipo;
+    public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnEditar;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnNuevo;
+    public javax.swing.JComboBox<String> cboxSeleccionarAtributoBuscar;
+    public javax.swing.JComboBox<String> cboxSeleccionarTipo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -392,15 +390,15 @@ public class JInternalFrameUsuarios extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jPasswordField1;
     private javax.swing.JLabel jPasswordField2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JPasswordField pwdIngresarPassword;
-    private javax.swing.JPasswordField pwdIngresarPassword1;
-    private javax.swing.JTextField txtApellidos;
-    private javax.swing.JTextField txtArea;
-    private javax.swing.JTextField txtBuscar;
-    private javax.swing.JTextField txtCargo;
-    private javax.swing.JTextField txtId;
-    private javax.swing.JTextField txtNombres;
-    private javax.swing.JTextField txtUsername;
+    public javax.swing.JTable jTable1;
+    public javax.swing.JPasswordField pwdIngresarPassword;
+    public javax.swing.JPasswordField pwdIngresarPassword1;
+    public javax.swing.JTextField txtApellidos;
+    public javax.swing.JTextField txtArea;
+    public javax.swing.JTextField txtBuscar;
+    public javax.swing.JTextField txtCargo;
+    public javax.swing.JTextField txtIdUsuario;
+    public javax.swing.JTextField txtNombres;
+    public javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }

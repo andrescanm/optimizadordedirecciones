@@ -35,13 +35,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jDesktopPane1 = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        barraMenuPrincipal = new javax.swing.JMenuBar();
+        menuArchivo = new javax.swing.JMenu();
+        menuItemUsuarios = new javax.swing.JMenuItem();
+        menuItemPredios = new javax.swing.JMenuItem();
+        menuItemSalir = new javax.swing.JMenuItem();
+        menuPreferencias = new javax.swing.JMenu();
+        menuAyuda = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Optimizador De Direcciones");
@@ -60,36 +60,36 @@ public class JFramePrincipal extends javax.swing.JFrame {
             .addGap(0, 302, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Archivo");
+        menuArchivo.setText("Archivo");
 
-        jMenuItem1.setText("Usuarios");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        menuItemUsuarios.setText("Usuarios");
+        menuItemUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                menuItemUsuariosActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        menuArchivo.add(menuItemUsuarios);
 
-        jMenuItem2.setText("Predios");
-        jMenu1.add(jMenuItem2);
+        menuItemPredios.setText("Predios");
+        menuArchivo.add(menuItemPredios);
 
-        jMenuItem3.setText("Salir");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        menuItemSalir.setText("Salir");
+        menuItemSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                menuItemSalirActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        menuArchivo.add(menuItemSalir);
 
-        jMenuBar1.add(jMenu1);
+        barraMenuPrincipal.add(menuArchivo);
 
-        jMenu2.setText("Preferencias");
-        jMenuBar1.add(jMenu2);
+        menuPreferencias.setText("Preferencias");
+        barraMenuPrincipal.add(menuPreferencias);
 
-        jMenu3.setText("Ayuda");
-        jMenuBar1.add(jMenu3);
+        menuAyuda.setText("Ayuda");
+        barraMenuPrincipal.add(menuAyuda);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(barraMenuPrincipal);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,15 +105,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void menuItemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemSalirActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_menuItemSalirActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        JInternalFrameUsuarios ventanaUsuarios = new JInternalFrameUsuarios();
-        jDesktopPane1.add(ventanaUsuarios);
-        ventanaUsuarios.show(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void menuItemUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemUsuariosActionPerformed
+        
+    }//GEN-LAST:event_menuItemUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,13 +145,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuBar barraMenuPrincipal;
+    public javax.swing.JDesktopPane jDesktopPane1;
+    public javax.swing.JMenu menuArchivo;
+    public javax.swing.JMenu menuAyuda;
+    public javax.swing.JMenuItem menuItemPredios;
+    public javax.swing.JMenuItem menuItemSalir;
+    public javax.swing.JMenuItem menuItemUsuarios;
+    public javax.swing.JMenu menuPreferencias;
     // End of variables declaration//GEN-END:variables
 }
