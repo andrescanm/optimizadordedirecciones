@@ -65,6 +65,7 @@ public class ControladorUsuario implements ActionListener{
         vistaUsuario.pwdIngresarPassword.setEditable(false);
         vistaUsuario.pwdIngresarPassword1.setEditable(false);
         vistaUsuario.btnGuardar.setEnabled(false);
+        vistaUsuario.cboxSeleccionarTipo.setEnabled(false);
     }
 
     public void activarControles(){        
