@@ -18,7 +18,5 @@ public class Optimizador {
         JInternalFrameUsuarios vistaUsuarios = new JInternalFrameUsuarios();
         UsuarioDAO modeloUsuario = new UsuarioDAO();
         ControladorUsuario controladorUsuarios = new ControladorUsuario(vistaPrincipal, vistaUsuarios, modeloUsuario);
-        //vistaPrincipal.setVisible(true);
-        //vistaPrincipal.setLocationRelativeTo(null);
     }
 }
