@@ -79,6 +79,7 @@ public class ControladorUsuario implements ActionListener{
         vistaUsuario.pwdIngresarPassword.setEditable(true);
         vistaUsuario.pwdIngresarPassword1.setEditable(true);
         vistaUsuario.btnGuardar.setEnabled(true);
+        vistaUsuario.cboxSeleccionarTipo.setEnabled(true);
     }
     
     
